@@ -146,7 +146,7 @@ tbody tr:hover{background:#f8fbf8}
 <div class="app">
 <aside class="sidebar">
   <div class="brand brand-lockup">
-  <div class="brand-mark"><img class="mawashina-logo-file" src="assets/mawashina-logo.webp" alt="شعار مزارع مواشينا"></div>
+  <div class="brand-mark"><img class="mawashina-logo-file" src="assets/mawashina-logo.jpg" alt="شعار مزارع مواشينا"></div>
   <div class="brand-name">مزارع مواشينا<small>إدارة متكاملة لمزارع المواشي</small><em>MAWASHINA FARMS</em></div>
  </div>
   <div class="navlabel">القائمة الرئيسية</div>
@@ -182,7 +182,7 @@ tbody tr:hover{background:#f8fbf8}
 </header>
 
 <section class="page active" id="dashboard">
- <div class="farm-hero masthead"><div class="masthead-copy"><span class="masthead-kicker">MAWASHINA FARMS • FARM MANAGEMENT</span><h1>إدارة أذكى… وإنتاج أوضح</h1><p>تابع الثروة الحيوانية، المصروفات، المساهمين، ودورة الاستثمار من مكان واحد.</p><div class="masthead-tags"><span>🐑 تسمين الخرفان</span><span>📊 متابعة مالية</span><span>🤝 إدارة المساهمين</span></div></div><div class="masthead-brand"><div class="masthead-logo"><img class="mawashina-logo-file" src="assets/mawashina-logo.webp" alt="شعار مزارع مواشينا"></div><strong>مزارع مواشينا</strong><small>MAWASHINA FARMS</small></div></div>
+ <div class="farm-hero masthead"><div class="masthead-copy"><span class="masthead-kicker">MAWASHINA FARMS • FARM MANAGEMENT</span><h1>إدارة أذكى… وإنتاج أوضح</h1><p>تابع الثروة الحيوانية، المصروفات، المساهمين، ودورة الاستثمار من مكان واحد.</p><div class="masthead-tags"><span>🐑 تسمين الخرفان</span><span>📊 متابعة مالية</span><span>🤝 إدارة المساهمين</span></div></div><div class="masthead-brand"><div class="masthead-logo"><img class="mawashina-logo-file" src="assets/mawashina-logo.jpg" alt="شعار مزارع مواشينا"></div><strong>مزارع مواشينا</strong><small>MAWASHINA FARMS</small></div></div>
  <div class="investment-strip"><div><small>رأس المال المستهدف</small><strong>250,000 ج.م</strong><span>5 مساهمين × 50,000 ج.م</span></div><div><small>عدد الخرفان المخطط</small><strong>15 رأس</strong><span>مشروع تسمين – دورة 120 يوم</span></div><div><small>إجمالي تكاليف الدورة</small><strong>209,770 ج.م</strong><span>شاملة احتياطي 10%</span></div><div><small>الإيرادات المتوقعة</small><strong>200,400 ج.م</strong><span>بيع + إيراد السماد</span></div><div class="negative"><small>صافي النتيجة التقديرية</small><strong>−9,370 ج.م</strong><span>عجز وفق الافتراضات الحالية</span></div></div>
  <div class="card investment-callout"><div><b>دراسة جدوى سهم الخرفان</b><p>قيمة السهم 50,000 جنيه • 5 مساهمين افتراضياً • حصة كل مساهم 20% من رأس المال.</p></div><button class="btn primary" onclick="showPage('feasibility')">عرض الدراسة التفصيلية ←</button></div>
  <div class="grid stats">
@@ -697,7 +697,7 @@ document.addEventListener('DOMContentLoaded',calculateFeasibility);setTimeout(ca
  };
  setGuidePhotos(); document.addEventListener('DOMContentLoaded',setGuidePhotos);
 })();</script><script id="mawashina-completion-patch">(function(){
- const logoSrc='assets/mawashina-logo.webp';
+ const logoSrc='assets/mawashina-logo.jpg';
  const applyLogo=function(){
   document.querySelectorAll('.brand-mark,.masthead-logo').forEach(function(el){
    var img=document.createElement('img');img.className='mawashina-logo-file';img.src=logoSrc;img.alt='شعار مزارع مواشينا';el.replaceChildren(img);
@@ -765,4 +765,11 @@ document.addEventListener('DOMContentLoaded',calculateFeasibility);setTimeout(ca
  var originalRender=window.render;
  if(typeof originalRender==='function'&&!originalRender.__mawashinaWrapped){var wrapped=function(){originalRender.apply(this,arguments);renderMeatOrders()};wrapped.__mawashinaWrapped=true;window.render=wrapped}
  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',function(){applyLogo();renderMeatOrders()});else renderMeatOrders();
-})();</script></body></html>
+})();</script><style id="mawashina-selected-logo-background">
+.brand-mark,.masthead-logo{background:#faf8ef!important;border:1px solid #d7c48c!important;box-shadow:0 8px 20px rgba(4,28,17,.14)!important}
+.brand-mark{padding:5px!important}
+.brand-mark .mawashina-logo-file{object-fit:contain!important;width:100%!important;height:100%!important}
+.masthead-logo{padding:3px!important}
+.masthead-logo .mawashina-logo-file{object-fit:contain!important;width:100%!important;height:100%!important}
+@media(min-width:761px){.sidebar{width:280px!important}.main{margin-right:280px!important;width:calc(100% - 280px)!important}}
+</style></body></html>
