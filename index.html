@@ -311,12 +311,12 @@ tbody tr:hover{background:#f8fbf8}
   </div>
   <div class="feas-results">
    <div class="card feas-result-main"><span class="eyebrow">02 / FINANCIAL OUTLOOK</span><h3>النتيجة المالية المتوقعة</h3><div class="feas-net-label">صافي نتيجة الدورة قبل توزيع الأرباح</div><div class="feas-net" id="fNet">—</div><div class="feas-status" id="fStatus">يتم الحساب</div><div class="feas-progress"><span id="fProgress"></span></div><div class="feas-mini-grid"><div><small>إجمالي الإيرادات</small><strong id="fRevenue">—</strong></div><div><small>إجمالي التكاليف</small><strong id="fCosts">—</strong></div><div><small>تكلفة الرأس الواحدة</small><strong id="fPerHead">—</strong></div><div><small>سعر التعادل للكيلو</small><strong id="fBreakEven">—</strong></div></div></div>
-   <div class="card"><h3>تفصيل تكاليف الدورة</h3><div id="fCostRows" class="feas-cost-rows"></div></div>
+   <div class="card"><h3>تفصيل تكاليف الدورة</h3><div id="fCostRows" class="feas-cost-rows"></div><div class="feas-note" style="margin-top:16px"><b>اختبار سعر الشراء:</b> عند سعر البيع الحالي والمدة والتغذية والمصاريف المدخلة، أقصى سعر شراء للرأس للوصول إلى نقطة التعادل هو <strong id="fMaxBuyPrice">—</strong>. هذا حد تعادل حسابي وليس سعراً مضموناً من السوق.</div></div>
    <div class="card"><h3>توزيع النتيجة على المساهمين</h3><div class="feas-share-box"><div><small>رأس المال المجمع</small><strong id="fCapital">—</strong></div><div><small>المتبقي بعد تكاليف الدورة</small><strong id="fBalance">—</strong></div></div><div class="feas-distribution"><div><span>حصة صاحب الأرض (5%) من الربح الموجب</span><b id="fLand">—</b></div><div><span>حصة مدير النشاط (5%) من الربح الموجب</span><b id="fManager">—</b></div><div><span>صافي المساهمين (90% من الربح الموجب)</span><b id="fInvestors">—</b></div><div class="highlight"><span>نصيب المساهم الواحد من الربح/الخسارة</span><b id="fPerInvestor">—</b></div></div><p class="feas-note">التوزيع 5% + 5% + 90% يُطبق على صافي الربح الموجب فقط وفق الاتفاق. عند الخسارة لا تُحسب مكافآت نسبية، وتُحمّل الخسارة على رأس المال حسب نسب الملكية، ما لم ينص العقد على غير ذلك.</p></div>
    <div class="card"><h3>قراءة سريعة قبل الاستثمار</h3><ul class="feas-checks"><li>لا تعتمد سعر البيع المتوقع قبل الحصول على عرض شراء مكتوب أو مقارنة سوقية حديثة.</li><li>سجّل وزن كل خروف عند الشراء ثم أسبوعياً لمراقبة معدل التحويل والنمو.</li><li>افصل مصروفات العلف والعلاج والنقل والعمالة، واحتفظ بفواتيرها.</li><li>لا تعتبر رأس المال كله مصروفاً؛ يظهر المتبقي كسيولة احتياطية للمشروع.</li></ul></div>
   </div>
  </div>
- <div class="card feas-method"><h3>كيف بُنيت الدراسة؟</h3><p>النموذج يفترض شراء خرفان تسمين بمتوسط 30 كجم، ثم الوصول إلى 47 كجم خلال 120 يوماً. يحسب تكلفة الشراء والتغذية اليومية والرعاية البيطرية والنقل والمصروفات الشهرية الثابتة (عمالة وكهرباء ومياه وإشراف) بحسب مدة الدورة، ثم الاحتياطي، ثم يقارنها بإيراد البيع والسماد. هذه دراسة أولية وليست ضماناً للعائد أو بديلاً عن معاينة الخرفان وعروض الأسعار الفعلية.</p><p>مرجع سعر استرشادي: سعر الخروف القائم المنشور بتاريخ 11 نوفمبر 2026 يدور حول 247–253 جنيه/كجم. كما نُشر سعر علف أغنام 16% عند 17,500 جنيه/طن في قائمة مصنع مؤرخة 23 أبريل 2026؛ الأسعار تختلف حسب المحافظة والنقل والجودة ويجب تحديثها قبل الشراء.</p></div>
+ <div class="card feas-method"><h3>كيف بُنيت الدراسة؟</h3><p>النموذج الحالي يفترض 20 خروفاً بمتوسط وزن شراء 22.5 كجم وسعر شراء 8,500 جنيه للرأس، ومدة دورة 120 يوماً ووزن بيع مستهدف 47 كجم. يحسب الشراء بسعر الرأس مباشرة، والتغذية اليومية والرعاية البيطرية والنقل والمصروفات الشهرية الثابتة (عمالة وكهرباء ومياه وإشراف) واحتياطي الطوارئ. جميع معدلات النمو والعليقة وأسعار البيع مدخلات تقديرية يجب مراجعتها بعروض فعلية وميزان ومتابعة طبيب بيطري؛ لا تُعد هذه الدراسة ضماناً للربح. يحسب تكلفة الشراء والتغذية اليومية والرعاية البيطرية والنقل والمصروفات الشهرية الثابتة (عمالة وكهرباء ومياه وإشراف) بحسب مدة الدورة، ثم الاحتياطي، ثم يقارنها بإيراد البيع والسماد. هذه دراسة أولية وليست ضماناً للعائد أو بديلاً عن معاينة الخرفان وعروض الأسعار الفعلية.</p><p>مرجع سعر استرشادي: سعر الخروف القائم المنشور بتاريخ 11 نوفمبر 2026 يدور حول 247–253 جنيه/كجم. كما نُشر سعر علف أغنام 16% عند 17,500 جنيه/طن في قائمة مصنع مؤرخة 23 أبريل 2026؛ الأسعار تختلف حسب المحافظة والنقل والجودة ويجب تحديثها قبل الشراء.</p></div>
 </section>
 
 
@@ -677,12 +677,12 @@ function calculateFeasibility(){
  const base=purchase+concentrate+rough+vet+transport+monthlyOverhead+v.fBedding+v.fMarket;
  const reserve=base*v.fContingency/100,total=base+reserve;
  const sales=v.fHeads*v.fSellWeight*v.fSellPrice, revenue=sales+v.fManure,net=revenue-total;
- const breakEven=v.fHeads*v.fSellWeight>0?(total-v.fManure)/(v.fHeads*v.fSellWeight):0;
+ const breakEven=v.fHeads*v.fSellWeight>0?(total-v.fManure)/(v.fHeads*v.fSellWeight):0;\n const maxBuyPrice=v.fHeads>0?Math.max(0,(revenue/ (1+v.fContingency/100) -(concentrate+rough+vet+transport+monthlyOverhead+v.fBedding+v.fMarket))/v.fHeads):0;
  const fmt=fMoney;
  const set=(id,val)=>{const e=document.getElementById(id);if(e)e.textContent=val};
  set('fCapitalHero',Math.round(capital).toLocaleString('en-US'));set('fPeopleKpi',v.fPeople);set('fHeadsKpi',v.fHeads);set('fDaysKpi',v.fDays);
  set('fNet',(net<0?'−':'')+fmt(Math.abs(net)));set('fRevenue',fmt(revenue));set('fCosts',fmt(total));set('fPerHead',fmt(v.fHeads?total/v.fHeads:0));set('fBreakEven',Math.round(breakEven).toLocaleString('en-US')+' ج.م');
- set('fCapital',fmt(capital));set('fBalance',fmt(capital-total)); 
+ set('fCapital',fmt(capital));set('fBalance',fmt(capital-total));set('fMaxBuyPrice',fmt(maxBuyPrice)); 
  const status=document.getElementById('fStatus');status.textContent=net>0?'ربح تقديري — غير مضمون':net<0?'خسارة تقديرية وفق الافتراضات الحالية':'نقطة تعادل تقريبية';status.className='feas-status'+(net<0?' loss':'');
  const netEl=document.getElementById('fNet');netEl.style.color=net<0?'#b3443e':'#1e6b46';
  const prog=document.getElementById('fProgress');prog.style.width=Math.max(0,Math.min(100,capital?total/capital*100:0))+'%';
