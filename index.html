@@ -141,6 +141,23 @@ tbody tr:hover{background:#f8fbf8}
 @media(max-width:950px){.meat-flow{grid-template-columns:repeat(3,1fr)}.meat-kpis{grid-template-columns:repeat(2,1fr)}}@media(max-width:650px){.meat-hero{padding:22px}.meat-hero h2{font-size:21px}.meat-emoji{display:none}.meat-flow{grid-template-columns:1fr}.meat-cost-grid{grid-template-columns:1fr 1fr}.meat-statuses{justify-content:flex-start}}
 
 </style>
+<style id="ismailia-market-styles">
+.farm-location-tag{display:inline-flex;align-items:center;margin-top:10px;padding:7px 12px;border:1px solid #ffffff45;border-radius:20px;background:#ffffff18;color:#fff;font-size:12px;font-weight:800}
+.ismailia-market-panel{margin:0 0 20px;padding:22px;border:1px solid #e0e9e1;border-radius:20px;background:linear-gradient(145deg,#fff,#f6faf6);box-shadow:0 9px 26px #163d2a0d}
+.ismailia-market-panel .section-title{margin-bottom:15px}
+.ismailia-market-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:11px}
+.ismailia-market-grid article,.ismailia-model-grid article{display:flex;flex-direction:column;gap:6px;padding:15px;border:1px solid #e5ece6;border-radius:13px;background:#fff;min-width:0}
+.ismailia-market-grid small,.ismailia-model-grid small{font-size:11px;color:#718078;line-height:1.7}
+.ismailia-market-grid strong{font-size:17px;color:#1d5b3c;overflow-wrap:anywhere}
+.ismailia-market-grid em{font-size:11px;color:#77847b;font-style:normal}
+.ismailia-model-title{display:flex;justify-content:space-between;align-items:center;gap:12px;margin:20px 0 10px}
+.ismailia-model-title h3{font-size:15px;margin:0}.ismailia-model-title span{font-size:10px;color:#77847b}
+.ismailia-model-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:11px}
+.ismailia-model-grid b{font-size:12px}.ismailia-model-grid strong{font-size:22px;color:#1d6845}
+.ismailia-warning{margin:14px 0 5px;padding:12px 14px;border-radius:11px;background:#fff8e9;border:1px solid #efdfbb;color:#765b2b;font-size:11px;line-height:1.9}
+.ismailia-sources{font-size:10px;color:#839087;margin:8px 0 0;line-height:1.8}
+@media(max-width:760px){.ismailia-market-panel{padding:14px}.ismailia-market-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.ismailia-model-grid{grid-template-columns:1fr}.ismailia-model-title{align-items:flex-start;flex-direction:column}}
+</style>
 </head>
 <body>
 <div class="app">
@@ -182,7 +199,7 @@ tbody tr:hover{background:#f8fbf8}
 </header>
 
 <section class="page active" id="dashboard">
- <div class="farm-hero masthead"><div class="masthead-copy"><span class="masthead-kicker">MAWASHINA FARMS • FARM MANAGEMENT</span><h1>إدارة أذكى… وإنتاج أوضح</h1><p>تابع الثروة الحيوانية، المصروفات، المساهمين، ودورة الاستثمار من مكان واحد.</p><div class="masthead-tags"><span>🐑 تسمين الخرفان</span><span>📊 متابعة مالية</span><span>🤝 إدارة المساهمين</span></div></div><div class="masthead-brand"><div class="masthead-logo"><img class="mawashina-logo-file" src="assets/mawashina-logo.jpg" alt="شعار مزارع مواشينا"></div><strong>مزارع مواشينا</strong><small>MAWASHINA FARMS</small></div></div>
+ <div class="farm-hero masthead"><div class="masthead-copy"><span class="masthead-kicker">MAWASHINA FARMS • FARM MANAGEMENT</span><h1>إدارة أذكى… وإنتاج أوضح</h1><p>تابع الثروة الحيوانية، المصروفات، المساهمين، ودورة الاستثمار من الإسماعيلية.</p><div class="farm-location-tag">📍 موقع التشغيل: محافظة الإسماعيلية – مصر</div><div class="masthead-tags"><span>🐑 تسمين الخرفان</span><span>📊 متابعة مالية</span><span>🤝 إدارة المساهمين</span></div></div><div class="masthead-brand"><div class="masthead-logo"><img class="mawashina-logo-file" src="assets/mawashina-logo.jpg" alt="شعار مزارع مواشينا"></div><strong>مزارع مواشينا</strong><small>MAWASHINA FARMS</small></div></div>
  <div class="investment-strip"><div><small>رأس المال المستهدف</small><strong>250,000 ج.م</strong><span>5 مساهمين × 50,000 ج.م</span></div><div><small>عدد الخرفان المخطط</small><strong>15 رأس</strong><span>مشروع تسمين – دورة 120 يوم</span></div><div><small>إجمالي تكاليف الدورة</small><strong>209,770 ج.م</strong><span>شاملة احتياطي 10%</span></div><div><small>الإيرادات المتوقعة</small><strong>200,400 ج.م</strong><span>بيع + إيراد السماد</span></div><div class="negative"><small>صافي النتيجة التقديرية</small><strong>−9,370 ج.م</strong><span>عجز وفق الافتراضات الحالية</span></div></div>
  <div class="card investment-callout"><div><b>دراسة جدوى سهم الخرفان</b><p>قيمة السهم 50,000 جنيه • 5 مساهمين افتراضياً • حصة كل مساهم 20% من رأس المال.</p></div><button class="btn primary" onclick="showPage('feasibility')">عرض الدراسة التفصيلية ←</button></div>
  <div class="grid stats">
@@ -236,6 +253,25 @@ tbody tr:hover{background:#f8fbf8}
 
 <section class="page" id="feasibility">
  <div class="section-title"><div><h2>دراسة جدوى مشروع تسمين الخرفان</h2><p>نموذج مالي قابل للتعديل — قيمة السهم 50,000 جنيه — خمسة مساهمين افتراضياً</p></div><span class="pill">نموذج تقديري قابل للتحديث</span></div>
+ <div class="ismailia-market-panel">
+  <div class="section-title"><div><h2>مؤشرات السوق المرجعية – الإسماعيلية</h2><p>آخر تحديث مرجعي: 11 نوفمبر 2026 • الأسعار المنشورة على مستوى مصر وليست عروض موردين محليين ملزمة</p></div><span class="pill">الإسماعيلية</span></div>
+  <div class="ismailia-market-grid">
+   <article><small>الفراخ البيضاء – سعر المزرعة</small><strong>70.5–71 ج.م/كجم</strong><em>الكتكوت الأبيض: 27–33 ج.م</em></article>
+   <article><small>علف الدواجن للتسمين</small><strong>22,500–24,580 ج.م/طن</strong><em>متوسط مرجعي حسب المرحلة والمصنع</em></article>
+   <article><small>الخروف القائم</small><strong>247–253 ج.م/كجم</strong><em>متوسط مرجعي: 250 ج.م/كجم</em></article>
+   <article><small>العجل البقري القائم</small><strong>182–188 ج.م/كجم</strong><em>متوسط مرجعي: 185 ج.م/كجم</em></article>
+   <article><small>علف الأغنام</small><strong>نحو 17,300 ج.م/طن</strong><em>أي نحو 17.30 ج.م/كجم</em></article>
+   <article><small>علف المواشي</small><strong>16,000–21,000 ج.م/طن</strong><em>حسب التركيبة والمورد</em></article>
+  </div>
+  <div class="ismailia-model-title"><h3>مقارنة النماذج التشغيلية الأولية</h3><span>قبل الإيجار والإهلاك والتمويل والتجهيزات</span></div>
+  <div class="ismailia-model-grid">
+   <article><b>دواجن – 1,000 كتكوت</b><strong>4,825 ج.م</strong><small>نتيجة تشغيلية تقديرية للدورة • 40–45 يوماً</small></article>
+   <article><b>أغنام – 15 رأساً</b><strong>13,440 ج.م</strong><small>نتيجة تقديرية لدورة 120 يوماً</small></article>
+   <article><b>عجول – 4 رؤوس</b><strong>10,720 ج.م</strong><small>نتيجة تقديرية لدورة 120 يوماً</small></article>
+  </div>
+  <p class="ismailia-warning">تنبيه مهم: هذه المقارنة نموذج أولي وليست ضمان ربح أو تسعيرة خاصة بالإسماعيلية. يجب الحصول على 3 عروض مكتوبة على الأقل للأعلاف والشراء والبيع داخل مركز المزرعة، وإضافة الإيجار والتجهيزات والنفوق والتمويل قبل اعتماد القرار الاستثماري.</p>
+  <p class="ismailia-sources">مصادر المؤشرات المنشورة: دواجن بلس (أسعار الدواجن والأعلاف)، بورصة لحوم مصر (أسعار القائم)، وفي الكتالوج (أسعار الأعلاف) – 11/11/2026.</p>
+ </div>
  <div class="feas-hero">
   <div><span class="eyebrow">MAWASHINA • SHEEP FATTENING</span><h2>استثمر في دورة تسمين واضحة الأرقام</h2><p>من شراء الخروف ووزنه الأول إلى التغذية والرعاية والبيع، مع إظهار تكلفة الرأس ونقطة التعادل ونصيب كل مساهم.</p></div>
   <div class="feas-hero-number"><small>رأس المال المستهدف</small><strong id="fCapitalHero">250,000</strong><small>جنيه مصري</small></div>
@@ -617,7 +653,7 @@ function saveSettings(){const l=+$('landRate').value,o=+$('operatorRate').value;
 initializeFarmStorage();
 
 // Sheep investment feasibility calculator
-const feasDefaults={fPeople:5,fShare:50000,fHeads:15,fDays:120,fBuyWeight:30,fBuyPrice:250,fSellWeight:47,fSellPrice:280,fConcentrate:1.1,fConPrice:17.5,fRough:.7,fRoughPrice:5,fVet:500,fTransport:350,fLabor:15000,fUtilities:3000,fBedding:2000,fMarket:4500,fContingency:10,fManure:3000};
+const feasDefaults={fPeople:5,fShare:50000,fHeads:15,fDays:120,fBuyWeight:30,fBuyPrice:250,fSellWeight:47,fSellPrice:250,fConcentrate:1.1,fConPrice:17.3,fRough:.7,fRoughPrice:5,fVet:500,fTransport:350,fLabor:15000,fUtilities:3000,fBedding:2000,fMarket:4500,fContingency:10,fManure:3000};
 const fNum=id=>Math.max(0,Number(document.getElementById(id)?.value)||0);
 const fMoney=n=>Math.round(n).toLocaleString('en-US')+' ج.م';
 function calculateFeasibility(){
