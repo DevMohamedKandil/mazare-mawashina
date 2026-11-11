@@ -279,7 +279,7 @@ tbody tr:hover{background:#f8fbf8}
  <div class="feas-kpis">
   <div class="feas-kpi"><small>عدد المساهمين</small><strong id="fPeopleKpi">5</strong><em>مساهمون افتراضياً</em></div>
   <div class="feas-kpi"><small>قيمة السهم</small><strong>50,000</strong><em>جنيه لكل مساهم</em></div>
-  <div class="feas-kpi"><small>عدد الخرفان المخطط</small><strong id="fHeadsKpi">15</strong><em>رأس في الدورة</em></div>
+  <div class="feas-kpi"><small>عدد الخرفان المخطط</small><strong id="fHeadsKpi">20</strong><em>رأس في الدورة</em></div>
   <div class="feas-kpi"><small>مدة الدورة</small><strong id="fDaysKpi">120</strong><em>يوم تقديرياً</em></div>
  </div>
  <div class="feas-layout">
@@ -288,10 +288,10 @@ tbody tr:hover{background:#f8fbf8}
    <div class="feas-form-grid">
     <label>عدد المساهمين<input id="fPeople" type="number" min="1" value="5"></label>
     <label>قيمة مساهمة الفرد (جنيه)<input id="fShare" type="number" min="1" value="50000"></label>
-    <label>عدد الخرفان<input id="fHeads" type="number" min="1" value="15"></label>
+    <label>عدد الخرفان<input id="fHeads" type="number" min="1" value="20"></label>
     <label>مدة الدورة (يوم)<input id="fDays" type="number" min="30" value="120"></label>
-    <label>متوسط وزن الشراء (كجم)<input id="fBuyWeight" type="number" min="1" step=".5" value="30"></label>
-    <label>سعر شراء الكيلو القائم<input id="fBuyPrice" type="number" min="1" value="250"></label>
+    <label>متوسط وزن الشراء (كجم)<input id="fBuyWeight" type="number" min="1" step=".5" value="22.5"></label>
+    <label>سعر شراء الرأس الواحدة (جنيه)<input id="fBuyPrice" type="number" min="1" value="8500"></label>
     <label>وزن البيع المتوقع (كجم)<input id="fSellWeight" type="number" min="1" step=".5" value="47"></label>
     <label>سعر بيع الكيلو القائم<input id="fSellPrice" type="number" min="1" value="280"></label>
     <label>علف مركز / رأس / يوم (كجم)<input id="fConcentrate" type="number" min="0" step=".1" value="1.1"></label>
@@ -665,12 +665,12 @@ function saveSettings(){const l=+$('landRate').value,o=+$('operatorRate').value;
 initializeFarmStorage();
 
 // Sheep investment feasibility calculator
-const feasDefaults={fPeople:5,fShare:50000,fHeads:15,fDays:120,fBuyWeight:30,fBuyPrice:250,fSellWeight:47,fSellPrice:250,fConcentrate:1.1,fConPrice:17.3,fRough:.7,fRoughPrice:5,fVet:500,fTransport:350,fMonthlyOverhead:4500,fBedding:2000,fMarket:4500,fContingency:10,fManure:3000};
+const feasDefaults={fPeople:5,fShare:50000,fHeads:20,fDays:120,fBuyWeight:22.5,fBuyPrice:8500,fSellWeight:47,fSellPrice:250,fConcentrate:1.1,fConPrice:17.3,fRough:.7,fRoughPrice:5,fVet:500,fTransport:350,fMonthlyOverhead:4500,fBedding:2000,fMarket:4500,fContingency:10,fManure:3000};
 const fNum=id=>Math.max(0,Number(document.getElementById(id)?.value)||0);
 const fMoney=n=>Math.round(n).toLocaleString('en-US')+' ج.م';
 function calculateFeasibility(){
  const v=Object.fromEntries(Object.keys(feasDefaults).map(k=>[k,fNum(k)]));
- const capital=v.fPeople*v.fShare, purchase=v.fHeads*v.fBuyWeight*v.fBuyPrice;
+ const capital=v.fPeople*v.fShare, purchase=v.fHeads*v.fBuyPrice;
  const concentrate=v.fHeads*v.fDays*v.fConcentrate*v.fConPrice, rough=v.fHeads*v.fDays*v.fRough*v.fRoughPrice;
  const vet=v.fHeads*v.fVet,transport=v.fHeads*v.fTransport;
  const monthlyOverhead=v.fMonthlyOverhead*(v.fDays/30);
