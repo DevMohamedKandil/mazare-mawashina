@@ -300,8 +300,7 @@ tbody tr:hover{background:#f8fbf8}
     <label>سعر كيلو الخشن/البرسيم<input id="fRoughPrice" type="number" min="0" step=".1" value="5"></label>
     <label>رعاية بيطرية وأدوية / رأس<input id="fVet" type="number" min="0" value="500"></label>
     <label>نقل وشراء وبيع / رأس<input id="fTransport" type="number" min="0" value="350"></label>
-    <label>عمالة وإشراف للدورة<input id="fLabor" type="number" min="0" value="15000"></label>
-    <label>مياه وكهرباء ونظافة<input id="fUtilities" type="number" min="0" value="3000"></label>
+    <label>عمالة + كهرباء + مياه + إشراف (شهرياً)<input id="fMonthlyOverhead" type="number" min="0" value="4500"></label>
     <label>فرشة ومستلزمات<input id="fBedding" type="number" min="0" value="2000"></label>
     <label>تسويق ورسوم سوق<input id="fMarket" type="number" min="0" value="4500"></label>
     <label>احتياطي طوارئ (%)<input id="fContingency" type="number" min="0" value="10"></label>
@@ -317,7 +316,7 @@ tbody tr:hover{background:#f8fbf8}
    <div class="card"><h3>قراءة سريعة قبل الاستثمار</h3><ul class="feas-checks"><li>لا تعتمد سعر البيع المتوقع قبل الحصول على عرض شراء مكتوب أو مقارنة سوقية حديثة.</li><li>سجّل وزن كل خروف عند الشراء ثم أسبوعياً لمراقبة معدل التحويل والنمو.</li><li>افصل مصروفات العلف والعلاج والنقل والعمالة، واحتفظ بفواتيرها.</li><li>لا تعتبر رأس المال كله مصروفاً؛ يظهر المتبقي كسيولة احتياطية للمشروع.</li></ul></div>
   </div>
  </div>
- <div class="card feas-method"><h3>كيف بُنيت الدراسة؟</h3><p>النموذج يفترض شراء خرفان تسمين بمتوسط 30 كجم، ثم الوصول إلى 47 كجم خلال 120 يوماً. يحسب تكلفة الشراء والتغذية اليومية والرعاية البيطرية والنقل والتشغيل والاحتياطي، ثم يقارنها بإيراد البيع والسماد. هذه دراسة أولية وليست ضماناً للعائد أو بديلاً عن معاينة الخرفان وعروض الأسعار الفعلية.</p><p>مرجع سعر استرشادي: سعر الخروف القائم المنشور بتاريخ 11 نوفمبر 2026 يدور حول 247–253 جنيه/كجم. كما نُشر سعر علف أغنام 16% عند 17,500 جنيه/طن في قائمة مصنع مؤرخة 23 أبريل 2026؛ الأسعار تختلف حسب المحافظة والنقل والجودة ويجب تحديثها قبل الشراء.</p></div>
+ <div class="card feas-method"><h3>كيف بُنيت الدراسة؟</h3><p>النموذج يفترض شراء خرفان تسمين بمتوسط 30 كجم، ثم الوصول إلى 47 كجم خلال 120 يوماً. يحسب تكلفة الشراء والتغذية اليومية والرعاية البيطرية والنقل والمصروفات الشهرية الثابتة (عمالة وكهرباء ومياه وإشراف) بحسب مدة الدورة، ثم الاحتياطي، ثم يقارنها بإيراد البيع والسماد. هذه دراسة أولية وليست ضماناً للعائد أو بديلاً عن معاينة الخرفان وعروض الأسعار الفعلية.</p><p>مرجع سعر استرشادي: سعر الخروف القائم المنشور بتاريخ 11 نوفمبر 2026 يدور حول 247–253 جنيه/كجم. كما نُشر سعر علف أغنام 16% عند 17,500 جنيه/طن في قائمة مصنع مؤرخة 23 أبريل 2026؛ الأسعار تختلف حسب المحافظة والنقل والجودة ويجب تحديثها قبل الشراء.</p></div>
 </section>
 
 
@@ -341,7 +340,7 @@ tbody tr:hover{background:#f8fbf8}
  </div>
  <div class="guide-two-col">
   <div class="card guide-card"><span class="guide-kicker">03 / HOW IT WORKS</span><h3>رحلة أموال المساهمة</h3><ol class="guide-steps"><li><b>الاكتتاب</b><p>تسجيل المساهم وعدد الأسهم والمبلغ المدفوع وتاريخ السداد وإصدار إيصال.</p></li><li><b>تجهيز وشراء الخرفان</b><p>اعتماد الشراء وتوثيق بيانات كل رأس وصورته ووزنه ومستنداته.</p></li><li><b>التشغيل والمتابعة</b><p>إثبات مصروفات العلف والمياه والعلاج والعمالة والنقل بشكل دوري.</p></li><li><b>البيع والتحصيل</b><p>تسجيل أوزان البيع والفواتير والتحصيل الفعلي وإيرادات السماد إن وجدت.</p></li><li><b>إقفال الدورة</b><p>مراجعة المصروفات والإيرادات والالتزامات ثم حساب الربح أو الخسارة.</p></li></ol></div>
-  <div class="card guide-card"><span class="guide-kicker">04 / FINANCIAL MODEL</span><h3>ملخص النموذج المالي الحالي</h3><div class="guide-fin-row"><span>إجمالي رأس المال</span><b>250,000 ج.م</b></div><div class="guide-fin-row"><span>تكلفة شراء الخرفان</span><b>112,500 ج.م</b></div><div class="guide-fin-row"><span>العلف المركز والخشن</span><b>40,950 ج.م</b></div><div class="guide-fin-row"><span>العلاج والنقل</span><b>12,750 ج.م</b></div><div class="guide-fin-row"><span>العمالة والتشغيل والتسويق</span><b>24,500 ج.م</b></div><div class="guide-fin-row"><span>احتياطي الطوارئ 10%</span><b>19,070 ج.م</b></div><div class="guide-fin-row total"><span>إجمالي التكاليف</span><b>209,770 ج.م</b></div><div class="guide-fin-row"><span>إيراد البيع والسماد</span><b>200,400 ج.م</b></div><div class="guide-fin-row loss"><span>صافي النتيجة الافتراضية</span><b>−9,370 ج.م</b></div><p class="guide-disclaimer">هذه أرقام نموذج الحساب الحالي المبني على افتراضات إدخال قابلة للتغيير، وليست عروض أسعار مؤكدة أو أرباحاً مضمونة. راجع شاشة دراسة الجدوى لتغيير الأسعار والكميات وإعادة الحساب.</p></div>
+  <div class="card guide-card"><span class="guide-kicker">04 / FINANCIAL MODEL</span><h3>ملخص النموذج المالي الحالي</h3><div class="guide-fin-row"><span>إجمالي رأس المال</span><b>250,000 ج.م</b></div><div class="guide-fin-row"><span>تكلفة شراء الخرفان</span><b>112,500 ج.م</b></div><div class="guide-fin-row"><span>العلف المركز والخشن</span><b>40,554 ج.م</b></div><div class="guide-fin-row"><span>العلاج والنقل</span><b>12,750 ج.م</b></div><div class="guide-fin-row"><span>العمالة والكهرباء والمياه والإشراف (4 أشهر) + التسويق</span><b>22,500 ج.م</b></div><div class="guide-fin-row"><span>احتياطي الطوارئ 10%</span><b>19,030 ج.م</b></div><div class="guide-fin-row total"><span>إجمالي التكاليف</span><b>209,334 ج.م</b></div><div class="guide-fin-row"><span>إيراد البيع والسماد</span><b>179,250 ج.م</b></div><div class="guide-fin-row loss"><span>صافي النتيجة الافتراضية</span><b>−30,084 ج.م</b></div><p class="guide-disclaimer">هذه أرقام نموذج الحساب الحالي المبني على افتراضات إدخال قابلة للتغيير، وليست عروض أسعار مؤكدة أو أرباحاً مضمونة. راجع شاشة دراسة الجدوى لتغيير الأسعار والكميات وإعادة الحساب.</p></div>
  </div>
  <div class="card guide-card guide-distribution">
  <div class="guide-section-head"><div><span class="guide-kicker">NEXT STAGE / MEAT RETAIL</span><h3>المرحلة التالية: بيع اللحوم والتوزيع المباشر</h3><p>بعد انتهاء دورة التربية، يمكن إضافة قناة بيع للمستهلك النهائي بدلاً من الاقتصار على بيع الحيوان حياً.</p></div></div>
@@ -666,7 +665,7 @@ function saveSettings(){const l=+$('landRate').value,o=+$('operatorRate').value;
 initializeFarmStorage();
 
 // Sheep investment feasibility calculator
-const feasDefaults={fPeople:5,fShare:50000,fHeads:15,fDays:120,fBuyWeight:30,fBuyPrice:250,fSellWeight:47,fSellPrice:250,fConcentrate:1.1,fConPrice:17.3,fRough:.7,fRoughPrice:5,fVet:500,fTransport:350,fLabor:15000,fUtilities:3000,fBedding:2000,fMarket:4500,fContingency:10,fManure:3000};
+const feasDefaults={fPeople:5,fShare:50000,fHeads:15,fDays:120,fBuyWeight:30,fBuyPrice:250,fSellWeight:47,fSellPrice:250,fConcentrate:1.1,fConPrice:17.3,fRough:.7,fRoughPrice:5,fVet:500,fTransport:350,fMonthlyOverhead:4500,fBedding:2000,fMarket:4500,fContingency:10,fManure:3000};
 const fNum=id=>Math.max(0,Number(document.getElementById(id)?.value)||0);
 const fMoney=n=>Math.round(n).toLocaleString('en-US')+' ج.م';
 function calculateFeasibility(){
@@ -674,7 +673,8 @@ function calculateFeasibility(){
  const capital=v.fPeople*v.fShare, purchase=v.fHeads*v.fBuyWeight*v.fBuyPrice;
  const concentrate=v.fHeads*v.fDays*v.fConcentrate*v.fConPrice, rough=v.fHeads*v.fDays*v.fRough*v.fRoughPrice;
  const vet=v.fHeads*v.fVet,transport=v.fHeads*v.fTransport;
- const base=purchase+concentrate+rough+vet+transport+v.fLabor+v.fUtilities+v.fBedding+v.fMarket;
+ const monthlyOverhead=v.fMonthlyOverhead*(v.fDays/30);
+ const base=purchase+concentrate+rough+vet+transport+monthlyOverhead+v.fBedding+v.fMarket;
  const reserve=base*v.fContingency/100,total=base+reserve;
  const sales=v.fHeads*v.fSellWeight*v.fSellPrice, revenue=sales+v.fManure,net=revenue-total;
  const breakEven=v.fHeads*v.fSellWeight>0?(total-v.fManure)/(v.fHeads*v.fSellWeight):0;
@@ -686,7 +686,7 @@ function calculateFeasibility(){
  const status=document.getElementById('fStatus');status.textContent=net>0?'ربح تقديري — غير مضمون':net<0?'خسارة تقديرية وفق الافتراضات الحالية':'نقطة تعادل تقريبية';status.className='feas-status'+(net<0?' loss':'');
  const netEl=document.getElementById('fNet');netEl.style.color=net<0?'#b3443e':'#1e6b46';
  const prog=document.getElementById('fProgress');prog.style.width=Math.max(0,Math.min(100,capital?total/capital*100:0))+'%';
- const rows=[['شراء الخرفان',purchase],['العلف المركز',concentrate],['العلف الخشن / البرسيم',rough],['الرعاية البيطرية والأدوية',vet],['النقل والشراء والبيع',transport],['العمالة والإشراف',v.fLabor],['المياه والكهرباء والنظافة',v.fUtilities],['الفرشة والمستلزمات',v.fBedding],['التسويق ورسوم السوق',v.fMarket],['احتياطي الطوارئ',reserve]];
+ const rows=[['شراء الخرفان',purchase],['العلف المركز',concentrate],['العلف الخشن / البرسيم',rough],['الرعاية البيطرية والأدوية',vet],['النقل والشراء والبيع',transport],['العمالة والكهرباء والمياه والإشراف ('+Math.round(v.fDays/30*10)/10+' شهر)',monthlyOverhead],['الفرشة والمستلزمات',v.fBedding],['التسويق ورسوم السوق',v.fMarket],['احتياطي الطوارئ',reserve]];
  document.getElementById('fCostRows').innerHTML=rows.map(([n,x])=>'<div class="feas-cost-row"><span>'+n+'</span><b>'+fmt(x)+'</b></div>').join('');
  const land=net>0?net*.05:0,manager=net>0?net*.05:0,investors=net>0?net*.9:net;
  set('fLand',fmt(land));set('fManager',fmt(manager));set('fInvestors',fmt(investors));set('fPerInvestor',fmt(v.fPeople?investors/v.fPeople:0));
